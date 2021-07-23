@@ -10,7 +10,6 @@ function ProgressBarDisplay({ session, focusDuration, breakDuration }) {
 
   const calculatedAria =
     100 - calculateAria(session.label, session.timeRemaining) * 100;
-  console.log(calculatedAria);
 
   return (
     <div className="row mb-2">
