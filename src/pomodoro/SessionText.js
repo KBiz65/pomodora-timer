@@ -10,7 +10,8 @@ function SessionText({ session, focusDuration, breakDuration }) {
           {session?.label} for{" "}
           {session.label === "Focusing"
             ? minutesToDuration(focusDuration)
-            : minutesToDuration(breakDuration)}
+            : minutesToDuration(breakDuration)}{" "}
+          minutes
         </h2>
         {/* TODO: Update message below correctly format the time remaining in the current session */}
         <p className="lead" data-testid="session-sub-title">
